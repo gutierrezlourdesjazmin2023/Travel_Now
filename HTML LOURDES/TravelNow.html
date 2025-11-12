@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelNow</title>
+  <link rel="stylesheet" href="stylecss.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <img src="logo.jpg" alt="Logo TravelNow">
+        <div class="brand-text">
+          <h1>TravelNow</h1>
+          <p>Viajá rápido. Volvé feliz.</p>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros </a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#destinos">Destinos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+<section class="hero">
+  <div class="hero-text">
+    <h1>Descubrí el mundo con TravelNow 🌍</h1>
+    <p>Viajá a donde soñás. Fácil, rápido y sin complicaciones.</p>
+    <a href="#destinos" class="boton-principal">Explorar destinos</a>
+  </div>
+</section>
+
+  <section id="inicio">
+    <h2>Inicio</h2>
+    <p>Bienvenido al sitio oficial de TravelNow
+      tenemos paquetes desde 500 Dolares en adelante 
+    </p>
+  </section>
+<section id="nosotros">
+  <h2>Sobre Nosotros</h2>
+  <p>En <strong>TravelNow</strong> somos un equipo apasionado por los viajes. Desde 2015 ayudamos a miles de personas a descubrir nuevos destinos, vivir experiencias únicas y volver felices. ✈️💙</p>
+
+  <!-- Información de los fundadores -->
+  <div class="equipo">
+    <div class="miembro">
+      <img src="cofundadora.jpg" alt="Dove Cameron - Cofundadora">
+      <h3>Dove Cameron</h3>
+      <p>Fundadora y Directora General</p>
+      <p class="bio">Mariana lidera TravelNow desde sus inicios, enfocándose en crear experiencias personalizadas que combinan confort, aventura y cultura.</p>
+    </div>
+
+    <div class="miembro">
+      <img src="cofundador.jpg" alt="German Garmendia Cofundador">
+      <h3>German Garmendia </h3>
+      <p>Co-fundador y Gerente de Operaciones</p>
+      <p class="bio">Carlos se encarga de coordinar los viajes y alianzas internacionales para ofrecer los mejores precios y servicios del mercado.</p>
+    </div>
+  </div>
+
+  <!-- Valores de la empresa -->
+  <div class="valores">
+    <h3>Nuestros valores</h3>
+    <ul>
+      <li>🌎 Pasión por los viajes y la cultura</li>
+      <li>🤝 Atención personalizada a cada cliente</li>
+      <li>💰 Transparencia y precios justos</li>
+      <li>⭐ Experiencias únicas e inolvidables</li>
+    </ul>
+  </div>
+
+  <!-- Reseñas de clientes -->
+  <div class="reseñas">
+    <h3>Lo que dicen nuestros viajeros</h3>
+    <div class="reseña">
+      <p>“El viaje a París fue increíble. Todo salió perfecto y el servicio fue excelente.”</p>
+      <span>- Lucía Fernández</span>
+    </div>
+    <div class="reseña">
+      <p>“Gracias a TravelNow cumplí el sueño de conocer Brasil. ¡Super recomendable!”</p>
+      <span>- Martín Pérez</span>
+    </div>
+    <div class="reseña">
+      <p>“Atención personalizada y muy profesionales. Volvería a viajar con ellos sin dudarlo.”</p>
+      <span>- Ana Torres</span>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p>Dejanos tus datos y contanos cuál es tu destino favorito. 💬✈️</p>
+
+  <form id="form-contacto" class="form-contacto">
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" required>
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" required>
+
+    <label for="destino">Destino favorito:</label>
+    <input type="text" id="destino" placeholder="Ej: París, Brasil, Mendoza..." required>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" rows="4" required></textarea>
+
+    <button type="submit" class="boton-principal">Enviar</button>
+  </form>
+
+  <hr>
+
+  <h3>📋 Contactos guardados</h3>
+  <div id="lista-contactos" class="lista-contactos">
+    <p>No hay contactos guardados aún.</p>
+  </div>
+</section>
+
+
+  <section id="destinos">
+  <h2>Destinos</h2>
+  <p>Descubrí nuestros paquetes más populares. ¡Elegí tu próxima aventura!</p>
+
+  <div class="destinos">
+    <div class="paquete">
+      <img src="paris.jpg" alt="París, Francia">
+      <h3>París, Francia</h3>
+      <p>5 noches en hotel 4★ + vuelo ida y vuelta.</p>
+      <p class="precio">Desde <strong>USD 1,200</strong></p>
+      <a href="#contacto" class="boton-secundario">Reservar</a>
+    </div>
+
+    <div class="paquete">
+      <img src="brasil.jpg" alt="Río de Janeiro, Brasil">
+      <h3>Río de Janeiro, Brasil</h3>
+      <p>7 noches con desayuno + excursión al Cristo Redentor.</p>
+      <p class="precio">Desde <strong>USD 900</strong></p>
+      <a href="#contacto" class="boton-secundario">Reservar</a>
+    </div>
+
+    <div class="paquete">
+      <img src="punta cana.avif" alt="Punta Cana, República Dominicana">
+      <h3>Punta Cana</h3>
+      <p>All Inclusive 5★ por 6 noches.</p>
+      <p class="precio">Desde <strong>USD 1,350</strong></p>
+      <a href="#contacto" class="boton-secundario">Reservar</a>
+    </div>
+
+    <div class="paquete">
+      <img src="mendoza.jpg" alt="Mendoza, Argentina">
+      <h3>Mendoza</h3>
+      <p>3 noches + tour de bodegas.</p>
+      <p class="precio">Desde <strong>USD 500</strong></p>
+      <a href="#contacto" class="boton-secundario">Reservar</a>
+    </div>
+  </div>
+</section>
+<section id="multimedia">
+  <h2>Multimedia</h2>
+  <p>Descubrí más sobre nuestros destinos y dejate llevar por la experiencia TravelNow 🎵✈️</p>
+
+  <!-- 🎵 Música de ambiente -->
+  <audio id="musica-fondo" src="musica.mp3" autoplay loop></audio>
+
+  <!-- 🎥 Video promocional -->
+  <div class="video-container">
+    <iframe width="560" height="315"
+      src="https://youtu.be/BSVpBFlg1jg?si=Dn6WcYBvSbLVxnIA"
+      title="Video promocional TravelNow"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- 🖼️ Galería de imágenes -->
+  <div class="galeria">
+    <img src="destino1.jpg" alt="Maldivas">
+    <img src="destino2.jpg" alt="Londres">
+    <img src="destino3.jpg" alt="Tokio">
+    <img src="destino4.jpg" alt="Roma">
+    <img src="destino5.jpg" alt="Machu Picchu">
+  </div>
+</section>
+
+     
+<script>
+  // Obtener referencias a los elementos
+  const form = document.getElementById('form-contacto');
+  const lista = document.getElementById('lista-contactos');
+
+  // Cargar contactos guardados al iniciar
+  mostrarContactos();
+
+  // Evento al enviar formulario
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Capturar datos del formulario
+    const nombre = document.getElementById('nombre').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const destino = document.getElementById('destino').value.trim();
+    const mensaje = document.getElementById('mensaje').value.trim();
+
+    if (!nombre || !email || !destino || !mensaje) {
+      alert('Por favor completá todos los campos.');
+      return;
+    }
+
+    // Crear objeto de contacto
+    const nuevoContacto = {
+      nombre,
+      email,
+      destino,
+      mensaje,
+      fecha: new Date().toLocaleString()
+    };
+
+    // Obtener lista existente del LocalStorage o crear nueva
+    let contactos = JSON.parse(localStorage.getItem('contactos')) || [];
+
+    // Agregar nuevo contacto
+    contactos.push(nuevoContacto);
+
+    // Guardar en LocalStorage
+    localStorage.setItem('contactos', JSON.stringify(contactos));
+
+    // Limpiar formulario
+    form.reset();
+
+    // Actualizar lista visual
+    mostrarContactos();
+  });
+
+  // Función para mostrar contactos guardados
+  function mostrarContactos() {
+    let contactos = JSON.parse(localStorage.getItem('contactos')) || [];
+
+    if (contactos.length === 0) {
+      lista.innerHTML = '<p>No hay contactos guardados aún.</p>';
+      return;
+    }
+
+    let html = '<ul>';
+    contactos.forEach((c, i) => {
+      html += `
+        <li class="item-contacto">
+          <strong>${c.nombre}</strong> (${c.email})<br>
+          🌍 <em>${c.destino}</em><br>
+          🗒️ ${c.mensaje}<br>
+          <small>${c.fecha}</small><br>
+          <button onclick="borrarContacto(${i})">❌ Borrar</button>
+        </li>
+      `;
+    });
+    html += '</ul>';
+
+    lista.innerHTML = html;
+  }
+
+  // Función para eliminar un contacto
+  function borrarContacto(index) {
+    let contactos = JSON.parse(localStorage.getItem('contactos')) || [];
+    contactos.splice(index, 1);
+    localStorage.setItem('contactos', JSON.stringify(contactos));
+    mostrarContactos();
+  }
+</script>
+
+</body>
+</html>

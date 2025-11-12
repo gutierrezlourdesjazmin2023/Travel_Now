@@ -1,0 +1,311 @@
+
+/* ======== CONFIGURACIÓN GENERAL ======== */
+:root {
+  --azul: #0094ff;
+  --azul-oscuro: #054a74;
+  --sombra: 0 4px 15px rgba(0,0,0,0.1);
+  --radio: 12px;
+}
+
+body {
+  background: #a9caeb;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #1e1730;
+}
+
+h2 {
+  color: #313180;
+  text-align: center;
+}
+
+p {
+  font-size: 17px;
+  text-align: center;
+}
+
+/* ======== HEADER ======== */
+header {
+  background: #fff;
+  box-shadow: var(--sombra);
+  padding: 25px 45px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-container img {
+  width: 55px;
+  height: 55px;
+  border-radius: var(--radio);
+  object-fit: cover;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.brand-text h1 {
+  font-size: 20px;
+  margin: 0;
+  color: var(--azul-oscuro);
+}
+
+.brand-text p {
+  font-size: 14px;
+  color: #0a638f;
+  margin: 2px 0 0;
+}
+
+/* ======== HERO ======== */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url('fondo principio.jpg') center/cover no-repeat;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  border-radius: 0 0 var(--radio) var(--radio);
+}
+
+.hero h1 { font-size: 2.5em; margin-bottom: 10px; }
+.hero p { font-size: 1.2em; margin-bottom: 20px; }
+
+/* ======== BOTONES ======== */
+.boton-principal, .boton-secundario {
+  background-color: var(--azul);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.boton-principal:hover, .boton-secundario:hover {
+  background-color: #007ad6;
+}
+
+/* ======== NAV ======== */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--azul-oscuro);
+  font-weight: 600;
+  transition: color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+  color: var(--azul);
+  transform: scale(1.05);
+}
+
+/* ======== SECCIONES ======== */
+section {
+  background: rgba(255,255,255,0.85);
+  margin: 40px auto;
+  padding: 25px;
+  width: 80%;
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+}
+
+/* ======== TARJETAS GENERALES ======== */
+.card {
+  background: #fff;
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* ======== DESTINOS ======== */
+.destinos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.paquete {
+  padding: 18px;
+}
+
+.paquete img {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.paquete h3 { color: var(--azul-oscuro); margin: 10px 0 6px; }
+.precio { color: var(--azul); font-weight: bold; }
+
+/* ======== CONTACTO ======== */
+.contacto-info {
+  background: rgba(255,255,255,0.9);
+  border-radius: var(--radio);
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contacto-info a {
+  color: var(--azul);
+  text-decoration: none;
+  font-weight: 600;
+}
+.contacto-info a:hover { text-decoration: underline; }
+
+/* FORMULARIO */
+.form-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.form-contacto input:focus,
+.form-contacto textarea:focus {
+  border-color: var(--azul);
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,148,255,0.3);
+}
+
+/* ======== LISTA CONTACTOS ======== */
+.lista-contactos {
+  margin-top: 20px;
+  background: #fff;
+  padding: 15px;
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+}
+
+.item-contacto {
+  background: #f8fbff;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.item-contacto button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.item-contacto button:hover { background: #e63b3b; }
+
+/* ======== NOSOTROS ======== */
+#nosotros p {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.equipo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.miembro {
+
+  width: 250px;
+  padding: 20px;
+}
+
+.miembro img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.valores, .reseña {
+  background: #fff;
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 700px;
+}
+
+.valores ul { list-style: none; padding: 0; }
+
+/* ======== MULTIMEDIA ======== */
+#multimedia { text-align: center; }
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  margin: 0 auto 30px;
+  max-width: 800px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+  border-radius: var(--radio);
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.galeria img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.galeria img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
